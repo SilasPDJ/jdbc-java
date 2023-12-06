@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac0fccda-a3d8-437d-896b-32f83d9555d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/mysql-connector-j-8.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ConnectionFactory2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ConsultarPessoas1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CreateTablePessoas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CriarBanco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NovaPessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/desafios/AtualizacaoDePessoa.java" afterDir="false" />
+    <list default="true" id="ac0fccda-a3d8-437d-896b-32f83d9555d1" name="Changes" comment="crudzinho damassa AtualizacaoDePessoa.java">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +151,14 @@
       <option name="presentableId" value="Default" />
       <updated>1701779710841</updated>
     </task>
+    <task id="LOCAL-00001" summary="crudzinho damassa AtualizacaoDePessoa.java">
+      <created>1701887895223</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701887895223</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,5 +171,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="crudzinho damassa AtualizacaoDePessoa.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="crudzinho damassa AtualizacaoDePessoa.java" />
   </component>
 </project>
