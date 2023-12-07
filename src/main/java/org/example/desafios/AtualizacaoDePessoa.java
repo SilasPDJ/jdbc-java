@@ -24,7 +24,7 @@ public class AtualizacaoDePessoa {
     }
 
     private boolean run() {
-        String nome, codigo, operacaoInicial;
+        String nome, novoNome, codigo, operacaoInicial;
         int operacao;
         List<String> codigosList;
 
@@ -61,10 +61,9 @@ public class AtualizacaoDePessoa {
             boolean operacaoInvalida = true;
             operacao = 0;
             while (operacaoInvalida) {
-                operacao = criarPergunta("Digite [1] ATUALIZAR NOME. [2] EXCLUIR", true);
+                operacao = Integer.parseInt(criarPergunta("Digite [1] ATUALIZAR NOME. [2] EXCLUIR: "));
                 operacaoInvalida = operacao != 1 && operacao != 2;
             }
-
             switch (operacao) {
                 case 1 -> {
                     nome = criarPergunta("DIgite o novo NOME da opção selecionada: ");
@@ -108,14 +107,6 @@ public class AtualizacaoDePessoa {
         return resposta;
     }
 
-    private Integer criarPergunta(String pergunta, boolean isInteger) {
-        System.out.print(pergunta);
-        Integer resposta = scanner.nextInt();
-        System.out.println();
-
-        return resposta;
-    }
-    
     void exibirPessoas() {
         try {
 

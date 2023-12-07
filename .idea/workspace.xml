@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac0fccda-a3d8-437d-896b-32f83d9555d1" name="Changes" comment="crudzinho damassa AtualizacaoDePessoa.java">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="ac0fccda-a3d8-437d-896b-32f83d9555d1" name="Changes" comment="add README.md">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConnectionFactory2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConnectionFactory2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/desafios/AtualizacaoDePessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/desafios/AtualizacaoDePessoa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,29 +41,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "code.cleanup.on.save": "true",
-    "last_opened_file_path": "O:/HACKING/IdeaProjects/JDBC/libs/mysql-connector-j-8.2.0.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;O:/HACKING/IdeaProjects/JDBC/libs/mysql-connector-j-8.2.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="O:\HACKING\IdeaProjects\JDBC\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="O:\HACKING\IdeaProjects\JDBC\src\main\java\org\example" />
+      <recent name="O:\HACKING\IdeaProjects\JDBC\src\main" />
+      <recent name="O:\HACKING\IdeaProjects\JDBC\src\main\java\org\example\desafios" />
       <recent name="O:\HACKING\IdeaProjects\JDBC\libs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -158,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701887895223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add README.md">
+      <created>1701888338105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701888338105</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +188,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="crudzinho damassa AtualizacaoDePessoa.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="crudzinho damassa AtualizacaoDePessoa.java" />
+    <MESSAGE value="add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/ConnectionFactory2.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

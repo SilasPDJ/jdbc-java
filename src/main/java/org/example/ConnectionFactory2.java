@@ -1,6 +1,9 @@
 package org.example;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.*;
+import java.util.Properties;
 
 public class ConnectionFactory2 {
     private final String databaseName;
@@ -12,6 +15,16 @@ public class ConnectionFactory2 {
 
     }
 
+    private static Properties getProperties() throws IOException {
+        Properties prop = new Properties();
+        String caminho = "O:\\HACKING\\IdeaProjects\\JDBC\\src\\main\\java\\org\\example\\desafios\\connection.properties";
+
+        try (FileInputStream input = new FileInputStream(caminho)) {
+            prop.load(input);
+        }
+
+        return prop;
+    }
 
     public ResultSet executeQuery(String query, String... parameters) {
         try {
@@ -28,7 +41,7 @@ public class ConnectionFactory2 {
         }
     }
 
-    public int executeStatementCommand(String query, String... parameters) {
+    public void executeStatementCommand(String query, String... parameters) {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
 
@@ -38,27 +51,28 @@ public class ConnectionFactory2 {
             }
 
             // Execute the update and return the number of affected rows
-            return preparedStatement.executeUpdate();
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
-    //    public Connection getConnection() {
-//        return connection;
-//    }
-//
     private Connection createConnection() {
-        final String url = "jdbc:mysql://localhost/" + databaseName;
-        final String usuario = "root";
-        final String senha = "";
-
         try {
+            Properties props = getProperties();
+
+            final String url = props.getProperty("db.url") + databaseName;
+            final String usuario = props.getProperty("db.user");
+            final String senha = props.getProperty("db.password");
+
             // System.out.println("Conexão efetuada com sucesso");
             return DriverManager.getConnection(url, usuario, senha);
-        } catch (SQLException e) {
+
+
+        } catch (SQLException | IOException e) {
             throw new RuntimeException(e);
         }
+
     }
 
     public void closeConnection() {

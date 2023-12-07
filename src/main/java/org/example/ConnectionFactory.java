@@ -1,20 +1,22 @@
 package org.example;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 public abstract class ConnectionFactory implements Connection {
     public static Connection getConnection() {
-        final String url = "jdbc:mysql://localhost/curso_java";
-        final String usuario = "root";
-        final String senha = "";
-
-        Connection conexao = null;
+        Connection conexao;
         try {
-            conexao = DriverManager.getConnection(url, usuario, senha);
-        } catch (SQLException e) {
+            Properties prop = getProperties();
+            conexao = DriverManager.getConnection(prop.getProperty("db.url"),
+                    prop.getProperty("db.user"),
+                    prop.getProperty("db.password"));
+        } catch (SQLException | IOException e) {
             throw new RuntimeException(e);
         }
         System.out.println("Conexão efetuada com sucesso");
@@ -22,8 +24,16 @@ public abstract class ConnectionFactory implements Connection {
         return conexao;
     }
 
-    public static Statement getStatement(Connection connection) throws SQLException {
-        return connection.createStatement();
+    private static Properties getProperties() throws IOException {
+        Properties prop = new Properties();
+        String caminho = "O:\\HACKING\\IdeaProjects\\JDBC\\src\\main\\java\\org\\example\\desafios\\connection.properties";
+
+        try (FileInputStream input = new FileInputStream(caminho)) {
+            prop.load(input);
+        }
+
+        return prop;
     }
+    
 
 }
